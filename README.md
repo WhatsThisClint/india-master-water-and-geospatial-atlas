@@ -1,5 +1,7 @@
 # India Master Water & Geospatial Atlas 🌊🗺️
 
+[![Direct Download GeoPackage (1.57 GB)](https://img.shields.io/badge/Download-GeoPackage%20(1.57%20GB)-2563eb?style=for-the-badge&logo=googlecloudstorage&logoColor=white)](https://github.com/WhatsThisClint/india-master-water-and-geospatial-atlas/releases/download/v1.0.1/india_master_water_and_geospatial_atlas.zip)
+
 [![OGC GeoPackage](https://img.shields.io/badge/OGC-GeoPackage%201.2-blue.svg)](https://www.geopackage.org/)
 [![CRS EPSG:4326](https://img.shields.io/badge/CRS-EPSG%3A4326%20WGS84-brightgreen.svg)](https://epsg.io/4326)
 [![Layers 75](https://img.shields.io/badge/Active%20Layers-75%20Layers-orange.svg)](#thematic-architecture)
@@ -7,6 +9,16 @@
 [![GitHub Release](https://img.shields.io/github/v/release/WhatsThisClint/india-master-water-and-geospatial-atlas)](https://github.com/WhatsThisClint/india-master-water-and-geospatial-atlas/releases)
 
 An authoritative, enterprise-grade, consolidated All-India Hydrological, Hydrogeological, Demographic, Administrative, and Infrastructure Master Spatial Intelligence Geodatabase.
+
+---
+
+## ⚡ Direct Download
+
+You can download the full consolidated database directly from the GitHub Release asset:
+
+📥 **[Download Master GeoPackage Archive (`india_master_water_and_geospatial_atlas.zip` — 1.57 GB)](https://github.com/WhatsThisClint/india-master-water-and-geospatial-atlas/releases/download/v1.0.1/india_master_water_and_geospatial_atlas.zip)**
+
+*After unzipping, the file extracts to `india_master_water_and_geospatial_atlas.gpkg` (3.62 GB).*
 
 ---
 
@@ -99,7 +111,7 @@ ogrinfo india_master_water_and_geospatial_atlas.gpkg -sql "
 If you utilize this geospatial database, layers, documentation, or analytical workflows in your research, publications, or engineering models, please cite it using the repository's native `CITATION.cff` or the following format:
 
 ### APA Format
-> Fernandes, C. (2026). *India Master Water & Geospatial Atlas: A Consolidated 75-Layer Hydrological, Hydrogeological, Demographic, and Infrastructure Geodatabase* (Version 1.0.0) [Spatial Database]. GitHub. https://github.com/WhatsThisClint/india-master-water-and-geospatial-atlas
+> Fernandes, C. (2026). *India Master Water & Geospatial Atlas: A Consolidated 75-Layer Hydrological, Hydrogeological, Demographic, and Infrastructure Geodatabase* (Version 1.0.1) [Spatial Database]. GitHub. https://github.com/WhatsThisClint/india-master-water-and-geospatial-atlas
 
 ### BibTeX
 ```bibtex
@@ -107,18 +119,11 @@ If you utilize this geospatial database, layers, documentation, or analytical wo
   author       = {Clinton Fernandes},
   title        = {{India Master Water & Geospatial Atlas: A Consolidated 75-Layer Hydrological, Hydrogeological, Demographic, and Infrastructure Geodatabase}},
   year         = {2026},
-  version      = {1.0.0},
+  version      = {1.0.1},
   publisher    = {GitHub},
   url          = {https://github.com/WhatsThisClint/india-master-water-and-geospatial-atlas}
 }
 ```
-
-### Minting a Permanent DOI with Zenodo
-To generate an immutable **Digital Object Identifier (DOI)** for your releases:
-1. Log in to [Zenodo](https://zenodo.org/) using your GitHub credentials.
-2. Navigate to **GitHub Settings** in Zenodo.
-3. Toggle the repository **`WhatsThisClint/india-master-water-and-geospatial-atlas`** to **ON**.
-4. Every new GitHub Release published will automatically receive an archival DOI from CERN/Zenodo.
 
 ---
 
@@ -131,4 +136,4 @@ To generate an immutable **Digital Object Identifier (DOI)** for your releases:
 """
     with open(os.path.join(REPO_DIR, "README.md"), "w", encoding="utf-8") as f:
         f.write(readme_content)
-    print("README.md updated with Citation & DOI section!")
+    print("README.md updated with Direct Download badge!")
