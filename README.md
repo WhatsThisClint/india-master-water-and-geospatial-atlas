@@ -4,6 +4,7 @@
 [![CRS EPSG:4326](https://img.shields.io/badge/CRS-EPSG%3A4326%20WGS84-brightgreen.svg)](https://epsg.io/4326)
 [![Layers 75](https://img.shields.io/badge/Active%20Layers-75%20Layers-orange.svg)](#thematic-architecture)
 [![QGIS Ready](https://img.shields.io/badge/QGIS-3.28%2B%20%7C%203.34%20LTR-93b023.svg)](https://qgis.org/)
+[![GitHub Release](https://img.shields.io/github/v/release/WhatsThisClint/india-master-water-and-geospatial-atlas)](https://github.com/WhatsThisClint/india-master-water-and-geospatial-atlas/releases)
 
 An authoritative, enterprise-grade, consolidated All-India Hydrological, Hydrogeological, Demographic, Administrative, and Infrastructure Master Spatial Intelligence Geodatabase.
 
@@ -68,6 +69,7 @@ india_master_water_and_geospatial_atlas.gpkg
 | **[`docs/ATTRIBUTE_DICTIONARY.md`](docs/ATTRIBUTE_DICTIONARY.md)** | Comprehensive dictionary covering 703 attribute columns with units and AI guides. |
 | **[`docs/SPATIAL_ANALYTICS_COOKBOOK.md`](docs/SPATIAL_ANALYTICS_COOKBOOK.md)** | Production Spatial SQL recipes, zonal statistics scripts, and hydrogeological queries. |
 | **[`docs/PYQGIS_AUTOMATION_GUIDE.md`](docs/PYQGIS_AUTOMATION_GUIDE.md)** | Headless automation, high-resolution map generation, and QGIS socket control. |
+| **[`CHANGELOG.md`](CHANGELOG.md)** | Full history of releases, added layers, and structural migrations. |
 
 ---
 
@@ -75,7 +77,7 @@ india_master_water_and_geospatial_atlas.gpkg
 
 ### Interactive Usage in QGIS
 1. Launch QGIS (3.28 LTR or 3.34+).
-2. Go to **Project $\rightarrow$ Open From $\rightarrow$ GeoPackage...**
+2. Go to **Project $\\rightarrow$ Open From $\\rightarrow$ GeoPackage...**
 3. Select `india_master_water_and_geospatial_atlas.gpkg`.
 4. Choose the project **`India_Master_Hydrology_and_Infrastructure`**.
 
@@ -92,17 +94,41 @@ ogrinfo india_master_water_and_geospatial_atlas.gpkg -sql "
 
 ---
 
+## 📚 Citation & DOI
+
+If you utilize this geospatial database, layers, documentation, or analytical workflows in your research, publications, or engineering models, please cite it using the repository's native `CITATION.cff` or the following format:
+
+### APA Format
+> Fernandes, C. (2026). *India Master Water & Geospatial Atlas: A Consolidated 75-Layer Hydrological, Hydrogeological, Demographic, and Infrastructure Geodatabase* (Version 1.0.0) [Spatial Database]. GitHub. https://github.com/WhatsThisClint/india-master-water-and-geospatial-atlas
+
+### BibTeX
+```bibtex
+@software{fernandes_india_master_atlas_2026,
+  author       = {Clinton Fernandes},
+  title        = {{India Master Water & Geospatial Atlas: A Consolidated 75-Layer Hydrological, Hydrogeological, Demographic, and Infrastructure Geodatabase}},
+  year         = {2026},
+  version      = {1.0.0},
+  publisher    = {GitHub},
+  url          = {https://github.com/WhatsThisClint/india-master-water-and-geospatial-atlas}
+}
+```
+
+### Minting a Permanent DOI with Zenodo
+To generate an immutable **Digital Object Identifier (DOI)** for your releases:
+1. Log in to [Zenodo](https://zenodo.org/) using your GitHub credentials.
+2. Navigate to **GitHub Settings** in Zenodo.
+3. Toggle the repository **`WhatsThisClint/india-master-water-and-geospatial-atlas`** to **ON**.
+4. Every new GitHub Release published will automatically receive an archival DOI from CERN/Zenodo.
+
+---
+
 ## 🛠️ Tech Stack & Compliance
 
 - **Format**: OGC GeoPackage 1.2 / SQLite 3
 - **Raster Tile Architecture**: OGC `gpkg_tile_matrix` pyramids (Zoom levels 0 to 4)
 - **Coordinate Reference System**: `EPSG:4326 - WGS 84` (Latitude / Longitude)
 - **Compatibility**: QGIS, ArcGIS Pro, GDAL, GeoPandas, PostGIS, MapLibre, DuckDB Spatial
-
----
-
-## 📄 License & Provenance
-- HydroSHEDS & HydroRIVERS: © WWF / USGS HydroSHEDS Technical Documentation
-- Groundwater Assessment: Central Ground Water Board (CGWB), Ministry of Jal Shakti
-- Demographics: WorldPop Research Group / University of Southampton
-- Administrative Boundaries: Survey of India / Election Commission of India / Census of India
+"""
+    with open(os.path.join(REPO_DIR, "README.md"), "w", encoding="utf-8") as f:
+        f.write(readme_content)
+    print("README.md updated with Citation & DOI section!")

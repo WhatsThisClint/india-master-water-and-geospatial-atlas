@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: "If you use this geospatial database, layers, or documentation in your research, models, or publications, please cite it as below."
+authors:
+  - family-names: "Fernandes"
+    given-names: "Clinton"
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+    affiliation: "Antigravity Spatial & Earth Intelligence"
+title: "India Master Water & Geospatial Atlas: A Consolidated 75-Layer Hydrological, Hydrogeological, Demographic, and Infrastructure Geodatabase"
+version: 1.0.0
+date-released: 2026-08-18
+url: "https://github.com/WhatsThisClint/india-master-water-and-geospatial-atlas"
+repository-code: "https://github.com/WhatsThisClint/india-master-water-and-geospatial-atlas"
+license: CC-BY-4.0
+keywords:
+  - "hydrology"
+  - "hydrogeology"
+  - "groundwater"
+  - "india"
+  - "hydrobasins"
+  - "hydrorivers"
+  - "worldpop"
+  - "qgis"
+  - "geopackage"
+  - "demographics"
+  - "aquifers"
+  - "water security"
+abstract: >-
+  The India Master Water & Geospatial Atlas is a unified, high-resolution All-India
+  spatial database combining 75 production GIS layers across administrative units,
+  topological drainage basin hierarchies (HydroBASINS Levels 12 to 1), river networks
+  (HydroRIVERS Orders 1 to 8), CGWB groundwater extraction and aquifer hydraulic
+  parameters (transmissivity, specific yield), GLiM geological lithology, surface water
+  bodies (HydroLAKES), 2.6M utility infrastructure assets, and multi-decadal WorldPop
+  gridded demographics (2000-2020). Standardized in native EPSG:4326 (WGS 84).
