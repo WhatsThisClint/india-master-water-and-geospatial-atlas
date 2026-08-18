@@ -2,7 +2,7 @@
 
 [![Direct Download GeoPackage (1.57 GB)](https://img.shields.io/badge/Download-GeoPackage%20(1.57%20GB)-2563eb?style=for-the-badge&logo=googlecloudstorage&logoColor=white)](https://github.com/WhatsThisClint/india-master-water-and-geospatial-atlas/releases/download/v1.0.1/india_master_water_and_geospatial_atlas.zip)
 
-[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![OGC GeoPackage](https://img.shields.io/badge/OGC-GeoPackage%201.2-blue.svg)](https://www.geopackage.org/)
 [![CRS EPSG:4326](https://img.shields.io/badge/CRS-EPSG%3A4326%20WGS84-brightgreen.svg)](https://epsg.io/4326)
 [![Layers 75](https://img.shields.io/badge/Active%20Layers-75%20Layers-orange.svg)](#thematic-architecture)
@@ -109,20 +109,19 @@ ogrinfo india_master_water_and_geospatial_atlas.gpkg -sql "
 
 ## 📄 License & Terms of Use
 
-This repository, database structure, styles, and documentation are licensed under the **[Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)](LICENSE)** license.
+This repository, database structure, styles, automation scripts, and documentation are licensed under the **[Apache License 2.0](LICENSE)**.
 
-### What You Can Do:
-- ✅ **Share & Adapt**: You are free to copy, redistribute, remix, transform, and build upon the material in any medium or format for research, education, non-profit, academic, and personal study.
-- ✅ **Attribution**: You must give appropriate credit, provide a link to the license, and indicate if changes were made.
-
-### What You Cannot Do:
-- ❌ **Non-Commercial**: You **may not** use the material for commercial purposes, monetized proprietary software, or paid commercial resale without prior explicit permission from the author.
+### Permissions & Protections:
+- ✅ **Commercial & Non-Commercial Use**: Free to use, modify, distribute, and integrate into commercial and academic applications.
+- ✅ **Patent Grant**: Automatic explicit patent license granted from all contributors.
+- ✅ **Trademark Protection**: Explicitly forbids using the author's or project's names for commercial endorsements.
+- ✅ **State Changes**: Modifiers must state that they changed the files.
 
 ---
 
 ## 📚 Citation & DOI
 
-If you utilize this geospatial database, layers, documentation, or analytical workflows in your research, publications, or non-commercial models, please cite it as below:
+If you utilize this geospatial database, layers, documentation, or analytical workflows in your research, publications, or engineering models, please cite it as below:
 
 ### APA Format
 > Fernandes, C. (2026). *India Master Water & Geospatial Atlas: A Consolidated 75-Layer Hydrological, Hydrogeological, Demographic, and Infrastructure Geodatabase* (Version 1.0.1) [Spatial Database]. GitHub. https://github.com/WhatsThisClint/india-master-water-and-geospatial-atlas
@@ -134,7 +133,7 @@ If you utilize this geospatial database, layers, documentation, or analytical wo
   title        = {{India Master Water & Geospatial Atlas: A Consolidated 75-Layer Hydrological, Hydrogeological, Demographic, and Infrastructure Geodatabase}},
   year         = {2026},
   version      = {1.0.1},
-  license      = {CC-BY-NC-4.0},
+  license      = {Apache-2.0},
   publisher    = {GitHub},
   url          = {https://github.com/WhatsThisClint/india-master-water-and-geospatial-atlas}
 }
@@ -151,4 +150,4 @@ If you utilize this geospatial database, layers, documentation, or analytical wo
 """
     with open(os.path.join(REPO_DIR, "README.md"), "w", encoding="utf-8") as f:
         f.write(readme_content)
-    print("README.md updated with CC BY-NC 4.0 license details!")
+    print("README.md updated with Apache 2.0 license details!")

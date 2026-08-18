@@ -10,7 +10,7 @@ version: 1.0.1
 date-released: 2026-08-18
 url: "https://github.com/WhatsThisClint/india-master-water-and-geospatial-atlas"
 repository-code: "https://github.com/WhatsThisClint/india-master-water-and-geospatial-atlas"
-license: CC-BY-NC-4.0
+license: Apache-2.0
 keywords:
   - "hydrology"
   - "hydrogeology"
