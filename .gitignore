@@ -1,0 +1,23 @@
+# Large GeoPackage & Raster Binaries
+*.gpkg
+*.gpkg-shm
+*.gpkg-wal
+*.tif
+*.zip
+*.7z
+*.tar.gz
+
+# Python & Environment
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+*.log
+
+# QGIS Workspace Backups
+*.qgz
+*.qgs~
+*.qgs.backup
+.directory
