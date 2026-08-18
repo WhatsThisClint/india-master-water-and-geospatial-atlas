@@ -6,11 +6,11 @@ authors:
     orcid: "https://orcid.org/0000-0000-0000-0000"
     affiliation: "Antigravity Spatial & Earth Intelligence"
 title: "India Master Water & Geospatial Atlas: A Consolidated 75-Layer Hydrological, Hydrogeological, Demographic, and Infrastructure Geodatabase"
-version: 1.0.0
+version: 1.0.1
 date-released: 2026-08-18
 url: "https://github.com/WhatsThisClint/india-master-water-and-geospatial-atlas"
 repository-code: "https://github.com/WhatsThisClint/india-master-water-and-geospatial-atlas"
-license: CC-BY-4.0
+license: CC-BY-NC-4.0
 keywords:
   - "hydrology"
   - "hydrogeology"
